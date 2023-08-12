@@ -1,0 +1,13 @@
+* window.location.href : get current url on your window;
+* isWalletInstalled : check user s' devices connected yet;
+* InjectedExtension: là một hàm được gọi để tải tiện ích mở rộng vào trình duyệt.
+Nó cung cấp cho tiện ích mở rộng các quyền truy cập đến các API của trình duyệt như lịch sử trình duyệt,
+cửa sổ trình duyệt, cài đặt và cấu hình trình duyệt, và các API khác.
+* InjectedMetadata: là một hàm được sử dụng để đọc thông tin metadata của tiện ích mở rộng,
+bao gồm tên, phiên bản và các thông tin khác.
+* InjectedProvider: là một hàm được sử dụng để cung cấp các dịch vụ và API cho tiện ích mở rộng của bạn.
+Nó có thể được sử dụng để truy cập đến các trang web và các tài nguyên khác trên Internet,
+cũng như để thực hiện các hoạt động trên các trang web đó.
+* Unsubcall: là một hàm được sử dụng để hủy đăng ký các sự kiện (event) đã được đăng ký trong tiện ích mở rộng.
+Nó giúp giải phóng tài nguyên và giảm thiểu lượng bộ nhớ được sử dụng bởi tiện ích mở rộng.
+* signer : Signer là một đối tượng hoặc một phần mềm được sử dụng để ký kết các giao dịch hoặc thông tin khác bằng cách sử dụng một khóa riêng tư (private key) của người dùng.

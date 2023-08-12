@@ -1,0 +1,2 @@
+*{box-sizing:border-box}body{align-items:center;background-color:#1f1d1d;margin:0;overflow-x:hidden;overflow-y:scroll;padding:0}body .app_container{background-color:#000;display:flex;flex-direction:column;height:900px;margin:auto;position:relative;width:400px;z-index:0}body::-webkit-scrollbar{display:none}body{-ms-overflow-style:none;scrollbar-width:none}
+/*# sourceMappingURL=main.5a74b1c1.css.map*/
