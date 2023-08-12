@@ -11,7 +11,7 @@ export interface EnvironmentType {
   }
   export const ENVIRONMENT : EnvironmentType = {
     NODE_ENV: process.env.NODE_ENV || 'development',
-    COLLECTION_ID: '5H7v8XSTG3nshsNeo7AeriotMcGqwLM6kf9rcNHsrQqwAeYW',
+    COLLECTION_ID: '5E5nLULXqBFzofMw4dzdacFtMkApPrLw8FiCyy2vWyJpYGmN',
     CHAIN_ENDPOINT: 'wss://ws.test.azero.dev',
     FAUCET_URL: 'https://faucet.test.azero.dev',
     INSTRUCTION_URL: 'https://youtu.be/7O2XUmAPpKE',
