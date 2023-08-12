@@ -1,0 +1,78 @@
+onMintNft sẽ làm :
+    1. tạo hợp đồng contractSmart bằng ContractPromise
+    2. fetch phiên giao dịch từ hợp đồng trước đó
+    3. lấy data để làm valid trước khi giao dịch
+    4. lấy ra phí của quá trình mint
+    5. thực hiện so sánh ballance nêú:
+       4.1. nhỏ hơn 0.5 thì return ra quá nhỏ để mint
+       4.2. nếu nhỏ hơn feeMint + 0.01 thì return ra không đủ để giao dịch
+    6. kiểm tra currentPhase nếu không tồn tại dèfault là 1;
+    7. gọi hàm launchpad_psp34_nft_standard_calls.publicMint
+Hàm launchpad_psp34_nft_standard :
+    1. setContract cho cả file
+    2. fetchCurrentPhaseId : + getCurrentPhase,
+    fetchPublicPhaseInfoData
+    check xem cái phase của current phase hiện có id có dạng nhuư thế nào
+    3. fetchPublicPhasesInfoData :
+        getLastPhaseId(account),
+        getPhaseAccountLastIndex(account, id),
+        getPhaseScheduleById(account, id)
+      {
+             publicClaimedAmount: strToNumber(data.publicClaimedAmount),
+                      publicRemainAmount:
+                        strToNumber(data.publicMintingAmount) -
+                        strToNumber(data.publicClaimedAmount),
+                      publicMintingFee: strToNumber(data.publicMintingFee),
+                      publicMintingAmount: strToNumber(data.publicMintingAmount),
+                      publicMaxMintingAmount: strToNumber(data.publicMaxMintingAmount),
+
+                      totalCountWLAddress: strToNumber(totalCountWLAddress),
+                      whitelistAmount: strToNumber(data.whitelistAmount),
+
+                      claimedAmount: strToNumber(data.claimedAmount),
+                      totalAmount: strToNumber(data.totalAmount),
+
+                      startTime: strToNumber(data.startTime),
+                      endTime: strToNumber(data.endTime),
+
+    }
+    4. publicMintingFee
+    5. publicMint
+
+    6. Cấu trúc hàm chung của get trong launchpad
+        6.1 lấy tài khoản của account
+        6.2 kiểm tra giới hạn gas
+        6.3 set azero_value = 0;
+        6.4 thực hiện query lên sever để lấy :
+        contract.query[ "psp34LaunchPadTraits::${tác vụ muốn querry}" ](
+        address , { value : azero_avlue, gaslimit }, phaseId);
+
+        sẽ return ra { result, output } với output là id của phase
+        6,5 nếu ok return ra output
+
+
+
+    7. gaslimit là phép đo các giới hạn gás ở mỗi quá trình transaction, có thể hiểu là tốc độ mạng,
+    cpu để quá trình tải được nhanh hơn để đảm bảo mỗi quá trình transaction/mint được phù hợp
+
+    8. getGasLimit( address,
+                      contract,
+                      value,
+                      queryName,
+                      ...args )
+       8.1 kiểm tra xem hoạt động trên thuộc loại hoạt động nào rồi
+       return ra { ok: true, value } ở hàm toContractAbiMessage
+       sau đó truyền giá trị gồm { value, gasLimit, storageDepositLimit }  = options
+        await api.call.contractsApi.call(
+           userAddress,
+           contract.address,
+           value ?? new BN(0),
+           gasLimit ?? null,
+           storageDepositLimit ?? null,
+           abiMessage.value.toU8a(args)
+         );
+
+Hàm publicMint :
+   1. create getEstimateGas
+       1.1 create DryBlock :
+          1.2

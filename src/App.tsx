@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Outlet, useNavigate } from 'react-router-dom';
+import Header from './component/Header/Header.component';
+import SelectAccount from './component/SelectAccount/SelectAccount.component';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { useEffect, useContext } from 'react';
+import { WalletInfomationContext, ConnectWalletContext } from "./context";
+
+
+const App = () =>{
+    const navigate = useNavigate();
+    const {accounts,wallet }= useContext( WalletInfomationContext );
+    const { mintedNFTs, setMintedNFTs } = useContext ( ConnectWalletContext )
+    useEffect(() => {
+        if(accounts === null ){
+            navigate('/welcome');
+        }else{
+            if(mintedNFTs && mintedNFTs.length > 0){
+                navigate('/result');
+            }else{
+                navigate('/minNft');
+            }
+        }
+    }, [ accounts, wallet, mintedNFTs, setMintedNFTs]);
+  return(
+    <>
+      <div className='app_container'>
+          <Header/>
+          <Outlet />
+      </div>
+      <SelectAccount  />
+      
+    </>
+    
+  )
 }
 
 export default App;
+ 

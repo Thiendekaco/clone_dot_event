@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "https://thiendekaco.github.io/clone_dot_event/static/css/main.40cc222b.css",
+    "main.js": "https://thiendekaco.github.io/clone_dot_event/static/js/main.2b5b6c7a.js",
+    "static/js/787.14cfe261.chunk.js": "https://thiendekaco.github.io/clone_dot_event/static/js/787.14cfe261.chunk.js",
+    "static/media/dot-event-afica.png": "https://thiendekaco.github.io/clone_dot_event/static/media/dot-event-afica.62e855c7c2a564db11a9.png",
+    "index.html": "https://thiendekaco.github.io/clone_dot_event/index.html",
+    "main.40cc222b.css.map": "https://thiendekaco.github.io/clone_dot_event/static/css/main.40cc222b.css.map",
+    "main.2b5b6c7a.js.map": "https://thiendekaco.github.io/clone_dot_event/static/js/main.2b5b6c7a.js.map",
+    "787.14cfe261.chunk.js.map": "https://thiendekaco.github.io/clone_dot_event/static/js/787.14cfe261.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40cc222b.css",
+    "static/js/main.2b5b6c7a.js"
+  ]
+}
