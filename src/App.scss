@@ -6,8 +6,7 @@
 body{
   background-color: rgb(31, 29, 29) ;
   align-items: center;
-  overflow-y: scroll; 
-  overflow-x: hidden;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   padding: 0;
@@ -27,12 +26,4 @@ body{
       height: 100%;
       padding: 0;
   }
-}
-body::-webkit-scrollbar {
-  display: none;
-}
-
-body {
--ms-overflow-style: none;  
-scrollbar-width: none;  
 }
