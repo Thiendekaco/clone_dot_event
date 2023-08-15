@@ -15,7 +15,6 @@ import { X, Copy } from "phosphor-react";
 import { MouseEvent } from "react";
 
 
-const Body = document.body;
 
 const SelectAccount = ()=>{
     const { state, setState, accountIsSelected, setAccount} = useContext(OpenSelectBoxContext);
@@ -27,7 +26,6 @@ const SelectAccount = ()=>{
 
     const handleClose = ()=>{
         setState(!state)
-        Body.style.overflowY  = state ? 'scroll'  : 'hidden';
     }
 
     const handleChecked = (event : MouseEvent<HTMLDivElement> ) =>{

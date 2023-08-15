@@ -12,7 +12,6 @@ import { ENVIRONMENT } from "../../utils/Environment.url";
 import { Icon } from "@subwallet/react-ui";
 import {toShort} from "@subwallet/react-ui/es/_util/address";
 
-const Body = document.body;
 
 const Header = () =>{
     const { state, setState, accountIsSelected} = useContext( OpenSelectBoxContext );
@@ -33,7 +32,6 @@ const Header = () =>{
 
     const handleOnClick = () =>{
         setState(!state)
-        Body.style.overflowY  = state ? 'scroll'  : 'hidden';
     }
     const bg = require('../../assets/logo.png')
     return(
