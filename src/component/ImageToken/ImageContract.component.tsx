@@ -20,7 +20,7 @@ const Avatar = ({ type, collection } : AvatarProps ) =>{
 
     const param =  useParams()['*']
     const handleOnClick = (): void=>{
-        window.open( ENVIRONMENT.ARTZERO_PORTAL )
+        window.open(`${ENVIRONMENT.ARTZERO_PORTAL}/#/collection/${collection?.nftContractAddress}?is_for_sale=false`)
     }
     return (
         <ImageContainer type={type}>

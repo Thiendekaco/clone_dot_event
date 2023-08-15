@@ -5,18 +5,17 @@ import { Button } from "@subwallet/react-ui";
 
 export const HeaderContainer = styled.div`
    width : 100%;
-   height : 10%;
-   padding: 20px;
+   height : 65px;
+   padding: 14px 13px 0 13px;
    display : flex;
    flex-direction : row;
    color: white;
-  font-family: ${props => props.theme.fontFamily}; 
+   font-family: ${props => props.theme.fontFamily}; 
   
 `
 export const Logo = styled.img`
    width : 120px;
-   height : 40px;
-   margin-right : 7%;
+   height : 40.44px;
 `
 export const CollectionAccount = styled.div`
   width: 220px;
@@ -29,7 +28,7 @@ export const CollectionAccount = styled.div`
   display: flex;
   flex-direction: row;
   transition: border-color 0.2s ease-in-out;
-
+  margin-left: 33px;
   &:hover {
     border-color: #2b2bb5;
   }
@@ -39,7 +38,7 @@ export const AccountBox = styled.div`
     display: flex;
     flex-direction: row;
     cursor: pointer;
-    width: 80%;
+    width: 100%;
     height : 20px;
     border-radius : 10px;
     border-color : transparent;
@@ -48,14 +47,23 @@ export const AccountBox = styled.div`
 `
 
 export const AccountName = styled(AccountItem)`
-    width: 80%;
+    width: 200px;
     height: 100%;
     font-weight: 500;
     margin: -2.5px 0 0  -10px;
     font-size: smaller;
     background-color: transparent !important;
+    white-space: nowrap;
+  
 `
 
 export const DivStylesQuestion = styled(Button)`
-    margin-left: 120px;
+    margin-left: 168px;
+    font-weight: 600 ;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: opacity ease-in-out 0.2s;
+    &:hover {
+      opacity: 1;
+    }
 `

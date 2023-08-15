@@ -14,11 +14,11 @@ export const fadeIn = keyframes`
 export const slideUp = keyframes`
 
     from{
-        top: 100%;
+        transform: translateY(100%);
 
     }
     to{
-        top : 25%;
+       transform: translateY(0);
     }
 
 `

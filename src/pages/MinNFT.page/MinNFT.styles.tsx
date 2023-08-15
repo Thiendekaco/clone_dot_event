@@ -7,21 +7,26 @@ export const MinNFTStyled = styled.div`
     height: 100%;
     z-index: 0;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
 
 `
 export const VideoInstructionContainer = styled.div`
-    width: 90%; 
-    margin-top: -10px;
+    width: 376px;
+    margin-top: -12px ;
+    opacity: 0.7;
+    transition: opacity 0.1s ease-in-out;
+   &:hover{
+    opacity: 1;
+   }
 `
 export const ButtonContainer = styled.div`
-    width: 80%;
+    width: 400px;
+    height: 54px;
     position: absolute;
     z-index : 1;
-    top: 35%;
-    left: 40px;
+    top: 305px;
+    left: 11px;
 
 `
 export const ButtonStyles = styled(Button)`

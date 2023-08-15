@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 
 export const Collection = styled.div`
-    width : 362px;
-    height : 30%;
-    margin-top : 30px;
+    width : 376px;
+    height : 195px;
+    margin-top : 10px;
     background-color : ${props => props.theme.backgroundColorCollection};
     border-radius : 10px;
-    padding : 15px 0 5px 15px;
+    padding : 15px 0 0 15px;
 `
 export const Descriptiton = styled.span `
     text-align: start;

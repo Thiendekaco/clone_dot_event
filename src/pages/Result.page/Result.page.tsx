@@ -26,7 +26,9 @@ const Result = () =>{
             <Button schema={"primary"}
                     icon={<Icon phosphorIcon={ShieldCheck} weight={"fill"}/>}
                     ghost={true}
-                    block={true}>
+                    block={true}
+                    style = {{width : '376px', marginTop : '10px'}}
+            >
                     Successfully
             </Button>
 

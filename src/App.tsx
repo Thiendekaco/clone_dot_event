@@ -27,8 +27,11 @@ const App = () =>{
       <div className='app_container'>
           <Header/>
           <Outlet />
+
       </div>
-      <SelectAccount  />
+      <div className='selectAccountContainer'>
+          <SelectAccount  />
+      </div>
       
     </>
     

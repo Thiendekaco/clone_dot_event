@@ -12,38 +12,36 @@ export const SelectContainer = styled.div<SelectAccountProps>`
     position: absolute;
     z-index: 1;
     top: 0;
-    margin-left: -18px;
     display : ${props => props.state === 'true' ? 'display' : 'none'};
     width : 100%;
-    height : 920px;
-    padding-left: 20px;
+    height : 100%;
     animation : ${fadeIn} 0.5s ease-in-out;
-
-
+    
+    
 `
 
 export const SelectBox  = styled.div<SelectAccountProps>`
     width: 380px;
     margin: auto;
-    height: 75%;
+    height: 550px;
+    position: sticky;
+    top: 100%;
     display: ${props => props.state === 'true' ? 'flex' : 'none'};
-    top: 25%;
-    position: relative;
     flex-direction : column;
     border-radius : 30px 30px 0 0;
     background-color: black;
-    animation : ${slideUp} 0.5s ease-in-out;
+    animation : ${slideUp} 0.3s ease-in-out;
 
 `
 
 export const SelectBoxHeader = styled.div`
     width: 100%;
     height: 10%;
-    padding : 20px 20px;
+    padding : 20px 0 55px 20px;
     display : flex;
     flex-direction : row;
     border-bottom: double 3px ${props => props.theme.backgroundColorCollection};
-
+    
 `
 export const SelectBoxTitile = styled.h3`
     color : ${props => props.theme.color};
@@ -57,7 +55,7 @@ export const IconClose = styled.div`
 
 export const SelectBoxContent = styled.div`
   width: 100%;
-  height: 385px;
+  height: 500px;
   margin-top: 10px;
   overflow-y: scroll;
   display: flex;
@@ -75,7 +73,7 @@ export const AccountBox = styled.div`
     cursor: pointer;
     width: 95%;
     height : 75px;
-    margin: 2px 0 10px 9px;
+    margin: 6px 0 0 9px;
     padding: 10px;
     border-radius : 10px;
     border-color : transparent;
@@ -91,7 +89,7 @@ export const AccountName = styled(AccountCard)`
     width: 100%;
     display : flex;
     margin-top: 2px;
-    font-weight: 500;
+    font-weight: 540;
     font-size: smaller;
     flex-direction : row;
     font-family : ${props => props.theme.fontFamily};
@@ -100,7 +98,7 @@ export const AccountName = styled(AccountCard)`
 `
 export const FooterBox = styled.div`
     width: 100%;
-    height: 100px;
+    height: 40px;
     display: block;
     background-color: transparent;
 `

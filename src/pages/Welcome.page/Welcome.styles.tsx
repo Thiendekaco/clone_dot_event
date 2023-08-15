@@ -11,9 +11,9 @@ export const WelcomeStyled = styled.div`
     align-items: center;
 `
 export const ButtonGroup = styled.div`
-    width : 90%;
+    width : 376px;
     height: 20%;
-    margin-top: 10px;
+    margin-top: -5px;
 `
 
 export const ButtonLink = styled(Link)`
@@ -25,4 +25,12 @@ export const ButtonStyles = styled(Button)`
       &:hover{
         opacity: 0.7;
       }
+`
+export const VideoInstructionContainer = styled.div`
+    width: 376px;
+    opacity: 0.7;
+  transition: opacity 0.1s ease-in-out;
+   &:hover{
+    opacity: 1;
+   }
 `

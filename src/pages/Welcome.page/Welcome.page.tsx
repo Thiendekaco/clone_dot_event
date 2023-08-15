@@ -1,7 +1,7 @@
 import Avatar from "../../component/ImageToken/ImageContract.component";
-import { WelcomeStyled, ButtonGroup, ButtonStyles} from "./Welcome.styles";
+import { WelcomeStyled, ButtonGroup, ButtonStyles, VideoInstructionContainer} from "./Welcome.styles";
 import CollectionDescription from "../../component/DescriptionCollector/DescriptionCollector.component";
-import { Wallet, YoutubeLogo} from "phosphor-react";
+import { Wallet } from "phosphor-react";
 import { Icon } from "@subwallet/react-ui";
 import VideoInstruction from "../../component/VideoInstruction/VideoInstruction.component";
 import {isWalletInstalled, getWalletBySource} from "@subwallet/wallet-connect/dotsama/wallets";
@@ -30,7 +30,9 @@ const Welcome = () =>{
                         onClick={() => handleConnectWallet()} >
                     Connect Wallet
                 </ButtonStyles>
-                <VideoInstruction />
+                <VideoInstructionContainer>
+                    <VideoInstruction />
+                </VideoInstructionContainer>
             </ButtonGroup>
         </WelcomeStyled>
     )
