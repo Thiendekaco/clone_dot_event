@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/clone_dot_event/static/css/main.5a74b1c1.css",
-    "main.js": "/clone_dot_event/static/js/main.89a5c03d.js",
+    "main.css": "/clone_dot_event/static/css/main.8eef281c.css",
+    "main.js": "/clone_dot_event/static/js/main.993297bf.js",
     "static/js/787.14cfe261.chunk.js": "/clone_dot_event/static/js/787.14cfe261.chunk.js",
     "static/media/SubWalletLogo.svg": "/clone_dot_event/static/media/SubWalletLogo.637b860fce4059c3a3b6b7c876a13601.svg",
     "static/media/TalismanLogo.svg": "/clone_dot_event/static/media/TalismanLogo.d2bc76e57d50979e1e7bfa71211ddc6f.svg",
     "static/media/FearlessWalletLogo.svg": "/clone_dot_event/static/media/FearlessWalletLogo.de4e8c2ad71364a21d4453e7991a5e5d.svg",
     "static/media/PolkadotLogo.svg": "/clone_dot_event/static/media/PolkadotLogo.8492330aac9d174faa4886cab4cb5b93.svg",
     "index.html": "/clone_dot_event/index.html",
-    "main.5a74b1c1.css.map": "/clone_dot_event/static/css/main.5a74b1c1.css.map",
-    "main.89a5c03d.js.map": "/clone_dot_event/static/js/main.89a5c03d.js.map",
+    "main.8eef281c.css.map": "/clone_dot_event/static/css/main.8eef281c.css.map",
+    "main.993297bf.js.map": "/clone_dot_event/static/js/main.993297bf.js.map",
     "787.14cfe261.chunk.js.map": "/clone_dot_event/static/js/787.14cfe261.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a74b1c1.css",
-    "static/js/main.89a5c03d.js"
+    "static/css/main.8eef281c.css",
+    "static/js/main.993297bf.js"
   ]
 }
