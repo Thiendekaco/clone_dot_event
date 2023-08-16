@@ -14,7 +14,7 @@ const CollectionDescription = ({collection}: CollectionProps) =>{
             <Descriptiton>
                 {collection && <Typography.Paragraph>
                     {collection?.description},
-                    <SeeMore href={ENVIRONMENT.ARTZERO_PORTAL} target="_blank"> See more</SeeMore>
+                    <SeeMore href={window.open(`${ENVIRONMENT.ARTZERO_PORTAL}/#/collection/${collection?.nftContractAddress}?is_for_sale=false`)} target="_blank"> See more</SeeMore>
                 </Typography.Paragraph> }
             </Descriptiton>
         </Collection>
